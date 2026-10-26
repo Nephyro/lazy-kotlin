@@ -19,5 +19,5 @@ fun getAllGames(): List<Game> {
 
 fun getGamesByStudio(studio: String): List<Game> {
     return getAllGames().filter {
-        it.studio.startsWith(studio, ignoreCase = true) }
+        it.studio.startsWith(prefix = studio, ignoreCase = true) }
 }
